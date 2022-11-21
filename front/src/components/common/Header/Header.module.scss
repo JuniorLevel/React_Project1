@@ -1,0 +1,13 @@
+@import "../../../scss/variables";
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    > button {
+        cursor: pointer;
+        background-color: transparent;
+        border: none;
+        outline: none;
+    }
+}
