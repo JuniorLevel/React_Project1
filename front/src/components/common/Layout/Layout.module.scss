@@ -2,7 +2,14 @@
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    height: 950px;
+    height: 890px;
     width: 500px;
     padding: 30px;
+    max-width: 560px;
+    width: 100%;
+    margin: 0 auto;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }

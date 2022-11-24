@@ -1,0 +1,55 @@
+@import "../../../../scss/variables";
+@import "../../../../scss/_animations";
+
+.wrapper {
+    position: relative;
+    > button {
+        cursor: pointer;
+        background-color: transparent;
+        border: none;
+        outline: none;
+    }
+    .menu {
+        display: none;
+        animation: opacity 0.4s;
+        &.show {
+            display: block;
+        }
+        position: absolute;
+        width: 110px;
+        top: calc(100% + 8px);
+        right: 0;
+        background-color: #fff;
+        padding: 10px 12px;
+        font-size: 14px;
+        box-shadow: $bx-16;
+        border-radius: 10px 0 10px 10px;
+        > ul {
+            list-style: none;
+            a {
+                color: #000;
+                text-decoration: none;
+                cursor: pointer;
+                transition: color 0.2s ease;
+            }
+            button {
+                transition: color 0.2s ease;
+                cursor: pointer;
+                background-color: transparent;
+                border: none;
+                outline: none;
+                font-size: inherit;
+                &:hover, &:active {
+                    color: $accent;
+                }
+            }
+        }
+        a:hover,
+        a:active {
+            color: $accent;
+        }
+        //button:hover, button:active {
+        //    color: $accent;
+        //}
+    }
+}

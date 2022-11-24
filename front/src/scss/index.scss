@@ -1,9 +1,14 @@
 @import "./variables";
 
+#root {
+    height: 100%;
+}
+
 body {
     background-color: $dark-purple;
     padding: 0px;
     margin: 0;
+    color: #fff;
 }
 
 * {
